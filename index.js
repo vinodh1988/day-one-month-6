@@ -17,7 +17,7 @@ function fun(p){
 
 function caller(){
 
-    fun( function(random){
+    fun((random)=>{
 		
 	   console.log('received random value',random);
 	} )
