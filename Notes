@@ -1,0 +1,10 @@
+
+anonymous function types
+
+- function that take any input and produce boolean as output  - Predicate
+
+-function that takes one input and produce one output  - Function
+
+-function that take no input but produce output  - Supplier
+
+-function that input but produce no output - Consumer

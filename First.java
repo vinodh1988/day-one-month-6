@@ -1,14 +1,18 @@
-interface Activity{
+import java.util.function.*;
+
+/*interface Activity{
     public void receive(long x);
-}
+}*/
 
 class Process{
 
-    public static void fun(Activity fun){
-         try{
+   // public static void fun(Activity fun){
+public static void fun(Consumer<Long> consumer){
+     //public static void fun()
+        try{
              int i=1;
             while(i<=5){
-                  fun.receive(Math.round(Math.random()*100000));
+                  consumer.accept(Math.round(Math.random()*100000));
                   i++;
                   Thread.sleep(2000);
             }
