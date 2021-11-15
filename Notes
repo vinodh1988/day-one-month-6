@@ -8,3 +8,24 @@ anonymous function types
 -function that take no input but produce output  - Supplier
 
 -function that input but produce no output - Consumer
+
+
+Predicate
+  (x)->{
+      return <boolean>
+  }
+
+  Supplier
+  ()->{
+      return <T>
+  }
+
+  Consumer
+  (<T>)->{
+      //logice
+  }
+
+  Function
+  (<T>)->{
+      return <T>
+  }
